@@ -1,8 +1,8 @@
 class Car{
-    Integer id;
-    String license;
-    Account driver;
-    Integer passengenger;
+    private Integer id;
+    private String license;
+    private Account driver;
+    private Integer passengenger;
 
     //Metodo constructor
     public Car(String license, Account driver) //Dentro del parentesís se colocan los parametros 
@@ -13,5 +13,15 @@ class Car{
     //metodo
     void printDataCar(){
         System.out.println("Car License: " + license + "Driver: " + driver.name);
+    }
+
+    public Integer getpassengenger()
+    {
+        return passengenger;
+    }
+
+    public void setPassengenger(Integer passengenger)
+    {
+        this.passengenger = passengenger;
     }
 }
